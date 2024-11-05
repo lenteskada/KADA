@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más información...</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 50px auto; 
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease; 
+        }
+
+        .container:hover img {
+            transform: scale(1.09); 
+        }
+
+        .container .content {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            text-align: justify;
+            height: 100%;
+            width: 100%;
+            color: beige;
+            box-sizing: border-box;
+            padding: 20px;
+            transition: top 0.3s ease-in-out; 
+        }
+
+        .content h3 {
+            text-align: center;
+            font-size: 25px;
+            border-bottom: 1px solid #808080;
+            padding: 0 10px 20px 10px;
+        }
+
+        .container p {
+            padding: 0 20px 15px 20px;
+            border-bottom: 1px solid #808080;
+        }
+
+
+        .container:hover .content {
+            top: 0; 
+        }
+        .indice {
+            position: fixed;
+            font-family: Arial;
+            top: 10%;
+            left: 5%;
+            background: rgb(228, 147, 241);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+        .indice a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #2a067e;
+        }
+    </style>
+</head>
+<body bgcolor="#A1C9F2">
+    <div class="indice">
+        <a href="index.html">VOLVER</a>
+    </div>
+    <div class="container">
+        <img src="PAEC.png" alt="">
+        <div class="content">
+            <h3>Integrantes:</h3>
+            <p>* Karen Ariana Maldonado Hurtado<br>
+            * Juan Daniel Rojas Ornelas</p>
+        </div>
+    </div>
+</body>
+</html>

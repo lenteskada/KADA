@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>cecytea</title>
+  <style>
+    @font-face {
+        font-family:'Cheri' ;
+        src: url('letracheri.TTF')format('truetype');
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .video-background {
+      position:absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+    }
+
+    .nombre-del-pro{
+      font-family:'Cheri', sans-serif;
+    }
+
+    .encargados {
+        background-color: rgba(201, 196, 181, 0.8);  
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex; 
+        border-radius: 10px;
+        border: 1px solid #566573;
+        padding: 15px;
+        font-family: sans-serif;
+    }
+
+    .encargados h2 {
+        font-family: 'Cheri', sans-serif;
+        margin-right: 30px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #007BFF;
+    }
+
+  </style>
+</head>
+
+<body bgcolor="F5F5F5">
+  <header>
+    <link rel="stylesheet" href="menuprop.css"> 
+    <a href="#" class="logo">
+      <img src="LOGO.png" alt="logo del pro">
+      <h1 class="nombre-del-pro">PROYECTOS DE APOYO</h1>
+    </a>
+    <nav>
+      <a href="lentes.html" class="nav-link">Lentes</a>
+      <a href="asilo.html" class="nav-link">Asilo</a>
+      <a href="tapitas.html" class="nav-link">Tapitas</a>
+      <a href="zoo.html" class="nav-link">Zoológico</a>
+      <a href="masinfo.html" class="nav-link">Para saber más...</a>
+    </nav>
+  </header>
+  <video class="video-background" autoplay loop muted>
+    <source src="fondoo.mp4" type="video/mp4">
+    Tu navegador no soporta el formato de video.
+  </video>
+
+  <main id="hola">
+    <div class="capa"></div>
+  </main>
+</body>
+</html>
