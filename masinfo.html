@@ -53,13 +53,16 @@
             top: 0;
         }
 
-        .content img {
-            display: block;
-            margin: 20px auto 0; /* Centra la imagen */
-            max-width: 80%; /* Ajusta el tamaño al 80% del contenedor */
+        .external-image {
+            text-align: center;
+            margin-top: 20px; /* Espacio entre el contenedor y la imagen */
+        }
+
+        .external-image img {
+            max-width: 80%; /* Asegura que la imagen no exceda el tamaño del contenedor */
             height: auto;
-            border-radius: 10px; /* Opcional: bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
         }
 
         .indice {
@@ -87,13 +90,15 @@
         <a href="index.html">VOLVER</a>
     </div>
     <div class="container">
-        <img src="PAEC2.png" alt="">
+        <img src="PAEC2.png" alt="Imagen principal">
         <div class="content">
             <h3>Integrantes:</h3>
             <p>* Karen Ariana Maldonado Hurtado<br>
             * Juan Daniel Rojas Ornelas</p>
-            <img src="collage.jpg" alt="COLLAGE">
         </div>
+    </div>
+    <div class="external-image">
+        <img src="collage..jpg" alt="COLLAGE">
     </div>
 </body>
 </html>
